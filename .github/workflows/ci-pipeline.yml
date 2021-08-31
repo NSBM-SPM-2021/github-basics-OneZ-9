@@ -21,7 +21,7 @@ jobs:
         working-directory: ./one-meetup
       - name: Run Tests
         env:
-          CI: true
+          CI: false
         run: npm test
         working-directory: ./one-meetup
       - name: Build
