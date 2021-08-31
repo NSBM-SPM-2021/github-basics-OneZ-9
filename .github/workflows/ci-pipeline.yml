@@ -19,11 +19,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
         working-directory: ./one-meetup
-      - name: Run Tests
-        env:
-          CI: false
-        run: npm test
-        working-directory: ./one-meetup
       - name: Build
         run: npm run build
         working-directory: ./one-meetup
