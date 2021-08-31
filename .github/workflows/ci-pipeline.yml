@@ -35,10 +35,8 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2.3.2
       - name: Download Artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: build
-          path: ./one-meetup/build
+        run: actions/download-artifact@v2
+        working-directory: ./one-meetup
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
