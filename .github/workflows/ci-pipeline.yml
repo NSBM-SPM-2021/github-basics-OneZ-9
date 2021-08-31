@@ -38,7 +38,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build
-          path: one-meetup/build
+          path: ./one-meetup/build
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
