@@ -45,5 +45,5 @@ jobs:
           args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          Error: Not in a Firebase app directory (could not locate firebase.json)
+          PROJECT_PATH: "./one-meetup"
           
